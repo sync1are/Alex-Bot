@@ -1,0 +1,7 @@
+{
+	"web_lookup": {
+		"open_browser": true,
+		"confirm_before_keystrokes": true,
+		"cache_ttl_seconds": 3600
+	}
+}
