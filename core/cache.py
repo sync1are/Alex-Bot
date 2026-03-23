@@ -25,7 +25,7 @@ def _choose_cache_dir():
         return FALLBACK_CACHE_DIR
 
 CACHE_DIR = _choose_cache_dir()
-os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok = True)
 
 def _key_to_path(key: str) -> str:
     name = hashlib.sha1(key.encode("utf-8")).hexdigest() + ".json"
