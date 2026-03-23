@@ -186,7 +186,7 @@ def _call_ollama_subprocess(final_prompt: str, temperature: float = 0.2, max_tok
             input=final_prompt,
             capture_output=True,
             text=True,
-            encoding="utf-8",
+ encoding = "utf-8",
             errors="replace",
             timeout=120
         )
