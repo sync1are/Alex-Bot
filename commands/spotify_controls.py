@@ -101,7 +101,6 @@ def previous_track():
         print(f"❌ Error: {e}")
         return False
 
-
 def play_pause():
     """Toggle play/pause"""
     try:
