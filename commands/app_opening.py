@@ -75,7 +75,7 @@ class AppOpening:
                 start, end = m.start(1), m.end(1)
                 # map indices by searching the group text in the original (case-insensitive)
                 group_text = m.group(1).strip()
-                m2 = re.search(re.escape(group_text), text, flags=re.IGNORECASE)
+ m2 = re.search(re.escape(group_text), text, flags = re.IGNORECASE)
                 if m2:
                     raw = text[m2.start():m2.end()].strip()
                 else:
