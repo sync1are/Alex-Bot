@@ -97,7 +97,7 @@ class AppOpening:
             time.sleep(0.6)
 
             # Press Enter to launch the top/first result
-            pyautogui.press('enter')
+            pyautogui.press("enter")
 
             return f"Attempting to launch {app_name} through Windows search..."
         except Exception as e:
