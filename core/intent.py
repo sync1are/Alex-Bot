@@ -36,7 +36,7 @@ def resolve_intent(user_input: str) -> str:
     search_triggers = [
         "search for", "look up", "find info about", "tell me about",
         "what is", "who is", "what are", "how to", "why does",
-        "when did", "where is"
+        "when did", "where is",
     ]
     
     text_lower = text.lower()
