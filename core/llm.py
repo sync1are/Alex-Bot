@@ -79,7 +79,7 @@ BOUNDARIES:
 
 RESPONSE STYLE:
 - Keep it natural and conversational
-- Use contractions (don't, can't, won't)
+- Use contractions (don"t, can"t, won't)
 - Occasional typos or casual language is fine
 - Vary sentence length for natural flow
 - Use emojis sparingly (1-2 per response max) when appropriate
