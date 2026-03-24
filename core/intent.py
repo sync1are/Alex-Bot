@@ -12,7 +12,7 @@ def resolve_intent(user_input: str) -> str:
     play_keywords = ["play", "pause", "next", "previous", "prev", "song", "music"]
     if any(word in text for word in play_keywords):
         # If sentence contains both 'play' and a likely song reference
-        if re.search(r'\bplay\b', text):
+        if re.search(r"\bplay\b", text):
             return "spotify"
         # if user mentions skip, pause, or next
         if any(word in text for word in ["pause", "next", "skip", "previous", "prev"]):
