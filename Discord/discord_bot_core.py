@@ -6,7 +6,6 @@ from commands.web_lookup import web_lookup
 from core.intent import resolve_intent
 from core.llm import query_llm
 
-
 def get_ai_response(user_input: str) -> str:
     """
     Process user input and return AI response
