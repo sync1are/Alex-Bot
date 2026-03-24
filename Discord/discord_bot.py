@@ -30,7 +30,7 @@ async def on_message(message):
         command_name = message.content[1:].split()[0].lower() if len(message.content) > 1 else ""
         
         # List of actual commands (removed 'listen')
-        command_list = ['help', 'ping', 'join', 'leave', 'speak', 'ask']
+        command_list = ["help", 'ping', 'join', 'leave', 'speak', 'ask']
         if command_name in command_list:
             await bot.process_commands(message)
             return
