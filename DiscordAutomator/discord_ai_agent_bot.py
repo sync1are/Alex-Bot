@@ -811,7 +811,7 @@ async def ai_setup(interaction: discord.Interaction, prompt: str, model: str = "
         status_msgs = []
 
         async def update_status(msg: str):
-            status_msgs.append("• " + msg)
+            status_msgs.append(f"• {msg}")
             if len(status_msgs) % 3 == 0:
                 embed = discord.Embed(
                     title="🤖 AI Agent Working...",
