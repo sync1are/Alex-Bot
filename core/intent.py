@@ -54,7 +54,7 @@ def resolve_intent(user_input: str) -> str:
         r"can you (open|launch|start|run)",
         r"could you (open|launch|start|run)",
         r"please (open|launch|start|run)",
-        r"(open|launch|start|run).*please"
+        r"(open|launch|start|run).*please",
     ]
     
     # Check for any app opening intent using regex patterns
