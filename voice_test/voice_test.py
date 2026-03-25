@@ -12,14 +12,14 @@ Usage:
 ------
 python speech_translation_pipeline.py --src-lang en --tgt-lang de --model-size base
 """
-import pyttsx3
-import argparse
-import threading
-import queue
-import time
-import numpy as np
 from collections import deque
 from typing import Optional, Dict, Any
+import argparse
+import numpy as np
+import pyttsx3
+import queue
+import threading
+import time
 
 # Core dependencies
 import pyaudio
