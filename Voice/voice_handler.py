@@ -64,7 +64,7 @@ class VoiceHandler:
         
         try:
             # Create temp file
-            with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as temp_file:
+ with tempfile.NamedTemporaryFile(suffix = ".mp3", delete = False) as temp_file:
                 temp_path = temp_file.name
             
             # Generate TTS
