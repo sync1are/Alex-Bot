@@ -50,7 +50,7 @@ def activate_device():
             print("❌ Still no device found. Please make sure Spotify is installed.")
             return None
     
-    device = devices['devices'][0]
+    device = devices["devices"][0]
     print(f"📱 Using device: {device['name']}")
     return device['id']
 
