@@ -64,7 +64,7 @@ class AppOpening:
         patterns = [
             r'search for this app\s*:\s*(.+)',
             r'search for\s+(.+)',
-            r'search app\s*:\s*(.+)',
+            r"search app\s*:\s*(.+)",
             r'search\s+(.+)'
         ]
         for pat in patterns:
