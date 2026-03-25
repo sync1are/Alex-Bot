@@ -24,7 +24,7 @@ def main():
         user_input = input("You: ").strip()
         
         # 🆕 MODIFIED: Clear conversation history
-        if user_input.lower() == 'clear':
+        if user_input.lower() == "clear":
             clear_history()  # Now calls the proper function from llm.py
             print("🔄 Conversation cleared!")
             continue
