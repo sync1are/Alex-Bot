@@ -123,7 +123,7 @@ class AppOpening:
             # If the fuzzy-extracted name doesn't match a known alias, prefix with 'app:'
             # so Windows searches the Apps section
             is_known = any(app_name.lower() in [a.lower() for a in aliases] for aliases in self.app_aliases.values())
-            return self.search_windows(app_name, prefix_app=not is_known)
+ return self.search_windows(app_name, prefix_app = not is_known)
 
         return "I couldn't understand which application to open. Please try again."
 
