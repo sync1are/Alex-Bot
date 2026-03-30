@@ -46,7 +46,7 @@ class AppOpening:
             return ""
 
         # Try to find the matching fragment in the original text to preserve casing
-        m = re.search(re.escape(t), original, flags=re.IGNORECASE)
+ m = re.search(re.escape(t), original, flags = re.IGNORECASE)
         if m:
             return original[m.start():m.end()].strip()
         return t
