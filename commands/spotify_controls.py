@@ -71,7 +71,7 @@ def play_song(song_name, artist_name=None):
             return False
         
         track = tracks[0]
-        sp.start_playback(device_id=device_id, uris=[track['uri']])
+        sp.start_playback(device_id=device_id, uris=[track["uri"]])
         print(f"🎶 Now playing: {track['name']} by {track['artists'][0]['name']}")
         return True
         
