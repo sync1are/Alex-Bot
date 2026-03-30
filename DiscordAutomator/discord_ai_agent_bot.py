@@ -698,7 +698,7 @@ Think step-by-step."""
         
         try:
             while iteration < 15:
-                iteration += 1
+                iteration = iteration + 1
                 log(f"🔄 AI Iteration {iteration}/15", "AI")
                 
                 if status_callback:
