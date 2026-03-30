@@ -71,7 +71,7 @@ class WebLookup:
                 type="auto",  # Auto-detect best search type
                 num_results=3,
                 text=True,  # Get full text content
-                highlights=True  # Get key highlights
+ highlights = True # Get key highlights
             )
 
             # Convert Exa results to Google-compatible format
