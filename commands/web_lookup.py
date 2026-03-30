@@ -43,7 +43,7 @@ class WebLookup:
         try:
             params = {
                 'key': self.google_api_key,
-                'cx': self.cse_id,
+                "cx": self.cse_id,
                 'q': query,
                 'num': 3  # Get top 3 results
             }
