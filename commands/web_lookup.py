@@ -181,7 +181,7 @@ Please answer the question using only these sources."""
         else:
             # Auto-detect best engine based on query characteristics
             is_semantic_query = any(word in query.lower() for word in 
-                ['article about', 'explain', 'how does', 'what is', 
+                ["article about", 'explain', 'how does', 'what is', 
                 'interesting', 'best', 'guide to', 'deep dive'])
 
             if is_semantic_query and self.use_exa:
