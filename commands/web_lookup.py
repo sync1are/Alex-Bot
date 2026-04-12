@@ -132,7 +132,7 @@ class WebLookup:
             link = result.get('link', '')
 
             # Check if Exa already provided content
-            if 'content' in result and result['content']:
+            if "content" in result and result['content']:
                 content = result['content']
             else:
                 # Scrape additional content if needed (for Google results)
