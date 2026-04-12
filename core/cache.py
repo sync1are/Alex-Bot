@@ -19,7 +19,7 @@ def _choose_cache_dir():
 
     # Create default; if race or permission issue, fall back
     try:
-        os.makedirs(DEFAULT_CACHE_DIR, exist_ok=True)
+ os.makedirs(DEFAULT_CACHE_DIR, exist_ok = True)
         return DEFAULT_CACHE_DIR
     except Exception:
         return FALLBACK_CACHE_DIR
