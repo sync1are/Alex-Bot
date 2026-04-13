@@ -100,6 +100,7 @@ def clear_history():
     logger.info("Conversation history cleared")
 
 # 🆕 ADD THIS: Function to build conversation context
+
 def _build_conversation_context(system_prompt: str) -> str:
     """Build the full conversation context including history"""
     parts = [system_prompt.strip()]
