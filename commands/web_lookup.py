@@ -208,7 +208,6 @@ Please answer the question using only these sources."""
 
         return '\n'.join(context)
 
-
 # Create instances with different configurations
 # Default: Use Exa if available, fallback to Google
 web_lookup = WebLookup(use_exa=True)
