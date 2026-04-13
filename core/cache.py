@@ -56,7 +56,7 @@ def set(key: str, value, ttl: int | None = None) -> bool:
         obj["expires_at"] = time.time() + int(ttl)
     try:
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(obj, f, ensure_ascii=False)
+ json.dump(obj, f, ensure_ascii = False)
         return True
     except Exception:
         return False
