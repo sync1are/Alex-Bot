@@ -92,6 +92,7 @@ Remember: You're Alex, not a corporate chatbot. Be real, be present, be adaptive
 }
 
 # 🆕 ADD THIS: Function to clear conversation history
+
 def clear_history():
     """Clear the conversation history"""
     global conversation_history
