@@ -34,6 +34,7 @@ app_handler = AppOpening()
 # Web Routes
 # =========================================================
 @app.route('/')
+
 def index():
     """Serve main chat interface"""
     return render_template('chat.html')
