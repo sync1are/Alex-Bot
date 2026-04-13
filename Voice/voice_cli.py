@@ -55,7 +55,7 @@ class VoiceCLI:
             temp_path = fp.name
         
         try:
-            communicate = edge_tts.Communicate(text, self.voice, rate='+12%')
+            communicate = edge_tts.Communicate(text, self.voice, rate="+12%")
             await communicate.save(temp_path)
             
             pygame.mixer.music.load(temp_path)
