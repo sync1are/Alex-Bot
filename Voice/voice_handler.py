@@ -48,7 +48,7 @@ class VoiceHandler:
     async def speak(self, ctx, text: str):
         """Convert text to speech and play it"""
         # Handle both ctx and message objects
-        if hasattr(ctx, 'voice_client'):
+        if hasattr(ctx, "voice_client"):
             voice_client = ctx.voice_client
         elif hasattr(ctx, 'guild'):
             voice_client = ctx.guild.voice_client
