@@ -34,7 +34,7 @@ class VoiceCLI:
             u"\U00002702-\U000027B0"
             u"\U000024C2-\U0001F251"
             "]+",
-            flags=re.UNICODE
+ flags = re.UNICODE
         )
         text = emoji_pattern.sub('', text)
         
