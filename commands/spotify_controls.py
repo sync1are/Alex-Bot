@@ -46,7 +46,7 @@ def activate_device():
         time.sleep(3)
         devices = sp.devices()
         
-        if not devices['devices']:
+        if not devices["devices"]:
             print("❌ Still no device found. Please make sure Spotify is installed.")
             return None
     
