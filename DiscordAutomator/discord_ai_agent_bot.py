@@ -918,7 +918,7 @@ class KeepAlive:
         self.ping_count = 0
         while self.running:
             await asyncio.sleep(10)  # Every 10 seconds
-            self.ping_count += 1
+            self.ping_count = ping_count + 1
             log(f"💓 Keepalive heartbeat #{self.ping_count}", "INFO")
     
     def start(self):
