@@ -72,7 +72,7 @@ def main():
         else:
             # Chat fallback → query local LLM (Gemma or Phi-2 via Ollama)
             try:
-                response = query_llm(user_input, preset="sarcastic", temperature=0.7, max_tokens=512)
+ response = query_llm(user_input, preset = "sarcastic", temperature = 0.7, max_tokens = 512)
                 print(f"Synclare: {response}\n")
                 voice.speak(response)
             except Exception as e:
