@@ -50,7 +50,7 @@ class WebLookup:
             response = self.session.get(self.google_base_url, params=params)
             response.raise_for_status()
             data = response.json()
-            return data.get('items', [])
+            return data.get("items", [])
         except Exception as e:
             print(f"Google search error: {e}")
             return []
