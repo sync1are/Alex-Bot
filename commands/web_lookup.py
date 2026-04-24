@@ -98,7 +98,7 @@ class WebLookup:
         Note: When using Exa, this is often unnecessary as Exa provides clean content
         """
         try:
-            response = self.session.get(url, timeout=10)
+ response = self.session.get(url, timeout = 10)
             soup = BeautifulSoup(response.text, 'html.parser')
             # Get text from paragraphs
             paragraphs = soup.find_all('p')
