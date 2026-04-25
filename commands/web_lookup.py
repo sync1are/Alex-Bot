@@ -6,7 +6,6 @@ import os
 import re
 import requests
 
-
 class WebLookup:
     def __init__(self, use_exa: bool = True):
         """
