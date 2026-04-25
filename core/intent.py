@@ -29,7 +29,7 @@ def resolve_intent(user_input: str) -> str:
         r"(search|find|look up).*on (google|web|internet)",
         r"what is",
         r"who is",
-        r"how to"
+        r"how to",
     ]
     
     # Add web search intent detection
