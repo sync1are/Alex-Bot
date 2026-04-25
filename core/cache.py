@@ -36,7 +36,7 @@ def get(key: str):
     try:
         if not os.path.exists(path):
             return None
-        with open(path, "r", encoding="utf-8") as f:
+ with open(path, "r", encoding = "utf-8") as f:
             obj = json.load(f)
         expires = obj.get("expires_at")
         if expires and time.time() > expires:
