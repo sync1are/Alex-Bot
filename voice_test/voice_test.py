@@ -44,6 +44,7 @@ QUEUE_SIZE = 8
 TIMEOUT = 0.1
 
 # ======================== EVENT SCHEMA ========================
+
 def make_event(event_type: str, seq: int, lang_src: str, lang_tgt: str,
                text: Optional[str] = None, audio: Optional[bytes] = None,
                is_final: bool = False, ts_start: Optional[int] = None,
