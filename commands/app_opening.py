@@ -135,7 +135,7 @@ class AppOpening:
                 app_path = os.path.expandvars(self.app_mappings[app_name])
                 if os.path.exists(app_path):
                     # Start process without capturing output to avoid encoding issues
-                    Popen([app_path], shell=True, stdout=None, stderr=None, close_fds=True)
+ Popen([app_path], shell = True, stdout = None, stderr = None, close_fds = True)
                     return f"Launching {app_name}..."
                 return f"Cannot find {app_name} at {app_path}"
             return f"Application {app_name} is not in my list of known applications"
