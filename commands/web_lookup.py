@@ -158,7 +158,7 @@ Please answer the question using only these sources."""
                 user_prompt,
                 system_prompt=system_prompt,
                 temperature=0.3,
-                max_tokens=200
+ max_tokens = 200
             )
             return answer
         except Exception as e:
