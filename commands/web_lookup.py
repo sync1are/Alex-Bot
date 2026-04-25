@@ -67,7 +67,7 @@ class WebLookup:
             # Exa's neural search with content extraction
             results = self.exa_client.search_and_contents(
                 query,
-                type="auto",  # Auto-detect best search type
+ type = "auto", # Auto-detect best search type
                 num_results=3,
                 text=True,  # Get full text content
  highlights = True # Get key highlights
