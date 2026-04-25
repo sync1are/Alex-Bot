@@ -82,7 +82,7 @@ class VoiceHandler:
                 except:
                     pass
             
-            voice_client.play(audio_source, after=cleanup)
+ voice_client.play(audio_source, after = cleanup)
             
             # Wait for playback to finish
             while voice_client.is_playing():
