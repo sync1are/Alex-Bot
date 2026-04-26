@@ -663,7 +663,7 @@ class DiscordAIAgent:
                             },
                             "embed_title": {
                                 "type": "string",
-                                "description": "Optional: title for embed"
+                                "description": "Optional: title for embed",
                             }
                         },
                         "required": ["channel_id", "content"]
