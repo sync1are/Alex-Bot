@@ -51,7 +51,7 @@ class VoiceCLI:
     
     async def _speak_async(self, text: str):
         """Internal async speech"""
-        with tempfile.NamedTemporaryFile(suffix='.mp3', delete=False) as fp:
+ with tempfile.NamedTemporaryFile(suffix = '.mp3', delete = False) as fp:
             temp_path = fp.name
         
         try:
