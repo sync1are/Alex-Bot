@@ -18,7 +18,7 @@ class VoiceCLI:
         
         # FIRST: Keep single emphasized words by removing just the asterisks
         # Match *word* (single word emphasis) and keep the word
-        text = re.sub(r'\*(\w+)\*', r'\1', text)
+        text = re.sub(r"\*(\w+)\*", r'\1', text)
         
         # THEN: Remove multi-word actions (like *rolls eyes*, *sigh*)
         # These have spaces or multiple words
