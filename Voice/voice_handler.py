@@ -50,7 +50,7 @@ class VoiceHandler:
         # Handle both ctx and message objects
         if hasattr(ctx, "voice_client"):
             voice_client = ctx.voice_client
-        elif hasattr(ctx, 'guild'):
+        elif hasattr(ctx, "guild"):
             voice_client = ctx.guild.voice_client
         else:
             return
