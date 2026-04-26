@@ -191,7 +191,7 @@ class VADChunker(threading.Thread):
                             chunk_buffer = b''
                             silence_frames = 0
                 
-                ts_ms += FRAME_MS
+                ts_ms = ts_ms + FRAME_MS
                 
         finally:
             stream.stop_stream()
