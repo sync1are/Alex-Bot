@@ -174,7 +174,7 @@ class VADChunker(threading.Thread):
                         silence_frames = 0
                     chunk_buffer += frame
                 else:
-                    silence_frames += 1
+                    silence_frames = silence_frames + 1
                     if in_speech:
                         chunk_buffer += frame
                         # Longer silence threshold (14 frames = 420ms)
