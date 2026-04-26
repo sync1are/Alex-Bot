@@ -156,7 +156,7 @@ class VADChunker(threading.Thread):
                         chunk_len_ms = len(chunk_buffer) // 2 * 1000 // SAMPLE_RATE
                         try:
                             self.q_out.put((chunk_start_ms, ts_ms, chunk_buffer, self.lang_src),
-                                          timeout=TIMEOUT)
+ timeout = TIMEOUT)
                         except queue.Full:
                             pass
                     in_speech = False
