@@ -1,9 +1,9 @@
 #​‌​‌​​‌‌​‌‌‌‌​​‌​‌‌​‌‌‌​​‌‌​​​‌‌​​‌‌​​​‌​‌‌​​​​‌​‌‌‌​​‌​​‌‌​​‌​‌​‌​‌‌‌‌‌​‌​​​​​‌​‌‌​‌‌​​​‌‌​​‌​‌​‌‌‌‌​​​​‌​​​​‌​​‌‌​‌‌‌‌​‌‌‌​‌​​​‌​‌‌‌‌‌​‌​​​‌‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌​​‌​​​​‌‌‌​‌​‌​‌‌​​​‌​​‌​‌‌‌‌‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌​‌
 # discord_bot.py
-import discord
 from discord.ext import commands
 from discord_bot_core import get_ai_response
 from Voice.voice_handler import voice_handler
+import discord
 
 TOKEN = "MTQzMDkxMTE3MzAyMDA5NDYwNA.GWfjs1.hJWlhwkl2TgvsqKPPCe7AQM4SA1LO2dlKIwoXE"
 
