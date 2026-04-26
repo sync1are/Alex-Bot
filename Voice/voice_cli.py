@@ -22,7 +22,7 @@ class VoiceCLI:
         
         # THEN: Remove multi-word actions (like *rolls eyes*, *sigh*)
         # These have spaces or multiple words
-        text = re.sub(r'\*[^*]+\*', '', text)
+        text = re.sub(r"\*[^*]+\*", '', text)
         
         # Remove emojis
         emoji_pattern = re.compile(
