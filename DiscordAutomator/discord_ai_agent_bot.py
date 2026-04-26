@@ -296,7 +296,7 @@ class DiscordTools:
                     try:
                         await channel.delete(reason=f"Bulk deletion by AI agent ({self.interaction.user})")
                         await asyncio.sleep(0.3)  # ← CRITICAL
-                        deleted_count += 1
+                        deleted_count = deleted_count + 1
                         log(f"  └─ Deleted: {channel.name}", "INFO")
                     except Exception as e:
                         log(f"  └─ Failed: {channel.name} - {e}", "WARNING")
