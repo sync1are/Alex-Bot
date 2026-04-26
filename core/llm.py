@@ -242,6 +242,7 @@ def query_llm(user_prompt: str,
     return "Error: Ollama not responding. Make sure it's running with 'ollama serve'."
 
 # 🆕 ADD THIS: Helper function to add messages to history
+
 def _add_to_history(user_msg: str, assistant_msg: str):
     """Add user and assistant messages to conversation history"""
     global conversation_history
