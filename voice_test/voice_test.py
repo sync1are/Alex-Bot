@@ -263,7 +263,7 @@ class STTWorker(threading.Thread):
             except queue.Full:
                 print("[STT] Output queue full")
             
-            self.seq += 1
+            self.seq = seq + 1
 
 # ======================== TRANSLATION WORKER ========================
 class TranslationWorker(threading.Thread):
