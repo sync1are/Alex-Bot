@@ -73,7 +73,7 @@ class TTSManager:
         if HAS_PYTTSX3:
             try:
                 self.engine = pyttsx3.init()
-                self.engine.setProperty('rate', 160)
+                self.engine.setProperty("rate", 160)
                 self.worker_thread = threading.Thread(target=self._worker, daemon=True)
                 self.worker_thread.start()
             except Exception as e:
