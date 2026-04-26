@@ -22,10 +22,10 @@ import threading
 import time
 
 # Core dependencies
-import pyaudio
-import webrtcvad
 from faster_whisper import WhisperModel
 from transformers import MarianMTModel, MarianTokenizer
+import pyaudio
+import webrtcvad
 
 try:
     import pyttsx3
