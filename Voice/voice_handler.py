@@ -68,7 +68,7 @@ class VoiceHandler:
                 temp_path = temp_file.name
             
             # Generate TTS
-            tts = gTTS(text=text, lang='en', slow=False)
+ tts = gTTS(text = text, lang = 'en', slow = False)
             tts.save(temp_path)
             
             # Play audio
